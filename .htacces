@@ -1,0 +1,4 @@
+RewriteEngine on
+AddDefaultCharset UTF-8
+RewriteCond %(REQUEST_URL) !src/
+RewriteRule (.*) /src/$1 [L]

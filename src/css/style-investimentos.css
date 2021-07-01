@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
+
+body {
+    background-color:#074250;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#logo {
+  width: 100px;
+}
+
+#container-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-investimentos {
+  width: 100px;
+  position: relative;
+  left: 960px;
+  top: -100px;
+}
+
+
+.jumbotron, h2 {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+blockquote {
+  height: 40px;
+}
+
+
+#titulo-investimentos {
+  font-weight: bolder;
+  position: relative;
+  top: -190px;
+}
+
+.page-header {
+  height: 110px;
+}
+
+.jumbotrom, h2 {
+  text-align: center;
+}
+
+#titulo-calculo {
+  position: relative;
+  height: -250;
+  font-weight: bolder;
+}
+
+
+#titulo-calculo {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -15px;
+}
+
+#exibir-calc-vf {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -20px;
+}
+
+#resultado-investimentos {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  top: -35px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    justify-content: center;
+  }
+
+  body {
+    width: 100%;
+  }
+  img#logo-investimentos, h3#titulo-investimentos {
+    display: none;
+  }
+
+  h2 {
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+  }
+
+}

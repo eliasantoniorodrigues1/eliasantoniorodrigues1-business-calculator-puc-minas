@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidade</title>
+      <!--Bootstrap 3.3.7-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-contabilidade.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <div class="container" id="container-logo">
+          <a href="index.html" src="img/calculadora-logo-menor.png"><img class="rounded float-left" src="img/calculadora-logo-menor.png" alt="business-calculator" id="logo"></a>
+          <p id="txt-business-calculator">BUSINESS<br>CALCULATOR</p>
+        </div>
+        <div class="container" id="container-contabilidade">
+          <img class="img-rounded" src="img/bandeira-do-brasil.png" alt="investimentos" id="logo-contabilidade">
+        </div>
+        <h3 class="text-center" id="titulo-contabilidade">CONTABILIDADE</h3>
+      </div>
+      
+      <div class="jumbotron">
+        <div class="container" id="jumbotron">
+          <h2>Calcule o custo total de um Colaborador</h2>
+          <blockquote class="blockquote-reverse">
+            <p>"Na contabilidade da vida a bondade sempre dá lucro e a maldade prejuízo."</p>
+            <footer><cite>Jovol</cite></footer>
+          <!-- <!-- </blockquote> -->
+        </div>
+        
+      </div>
+
+      <div class="calculo" id="calculo">
+        <form>
+            <label>Salário Base</label>
+            <input class="form-control" type="number" id="salario" name="salario" placeholder="Digite o Salário Base">
+            <br>
+            <label>Auxílio Refeição</label>
+            <input class="form-control" type="number" id="auxrefeicao" name="auxrefeicao" placeholder="Auxílio Refeição"/>
+            <br>
+            <label for="">Auxílio Alimentação</label>
+            <input class="form-control" type="number" id="auxalimentacao" name="auxalimentacao" placeholder="Auxílio Alimentação"/>
+            <br>
+            <label for="planosaude">Plano de saude</label>
+            <input class="form-control" type="number" id="planosaude" name="planosaude" placeholder="Plano de saude"/>
+            <br>
+            <label for="outros">Outros Beneficios</label>
+            <input class="form-control" type="number" id="outros" name="outros" placeholder="Outros Beneficios"/>
+            <br>
+            <button class="btn btn-primary btn-lg" type="button" onclick="calcular()">Calcular</button>       
+            <br>
+            <br>
+            <label for="">Resultado:</label>
+            <input class="form-control" type="text" disabled id="fgts" name="fgts" placeholder="FGTS"/>
+            <br>
+            <input class="form-control" type="text" type="text" disabled id="ferias" name="ferias" placeholder="Férias 1/12"/>
+            <br>
+            <input class="form-control" type="text" disabled id="umtercoferias" name="umtercoferias" placeholder="1/3 Ferias 1/12"/>
+            <br>
+            <input class="form-control" type="text" disabled id="decimoterceirosalario" name="decimoterceirosalario" placeholder="13º Salário 1/12"/>
+            <br>
+            <input class="form-control" type="text" disabled id="fgtsferias" name="fgtsferias" placeholder="FGTS Férias 1/12"/>
+            <br>
+            <input class="form-control" type="text" disabled id="fgtsumtercoferias" name="fgtsumtercoferias" placeholder="FGTS 1/3 Ferias 1/12"/>
+            <br>
+            <input class="form-control" type="text" disabled id="fgtsdecimoterceirosalario" name="fgtsdecimoterceirosalario" placeholder="FGTS 13º Sálario 1/12"/>   
+            <br>
+            <input class="form-control" type="text" disabled id="avisoprevio" name="avisoprevio" placeholder="Aviso Prévio 1/12 (provisão)"/>  
+            <br>
+            <input class="form-control" type="text" disabled id="fgtsavisoprevio" name="fgtsavisoprevio" placeholder="FGTS Aviso Prévio 1/12 (provisão)"/>    
+            <br>
+            <input class="form-control" type="text" disabled id="multaavisoprevio" name="multaavisoprevio" placeholder="Multa Aviso Prévio 1/12 (provisão)"/>  
+            <br>
+          <p id="resultado"></p>
+          <p id="custototal"></p>
+          <br>
+        </form>
+        <div class="container" id="trata-erro"></div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/calculadora.js"></script>
+  </body>
+</html>
