@@ -244,11 +244,10 @@ function valorFuturo() {
         "Período": periodo,
   };
 
-  valida = validaEntradas(dict_validacao);
   // TESTE DE ENTRADA DE DADOS
   valida = validaEntradas(dict_validacao);
   if (valida !== 'Sucesso'){
-    //alert(valida);
+    // alert(valida);
     document.getElementById("trata-erro").innerHTML = valida;
     return false;
   };                  
