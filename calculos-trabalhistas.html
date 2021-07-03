@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap 3.3.7-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style-trabalhista.css">
+  <title>Cálculos Trabalhistas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div class="container" id="container-logo">
+        <a href="index.html" src="img/calculadora-logo-menor.png"><img class="rounded float-left" src="img/calculadora-logo-menor.png" alt="business-calculator" id="logo"></a>
+        <p id="txt-business-calculator">BUSINESS<br>CALCULATOR</p>
+      </div>
+      <div class="container" id="container-trabalhista">
+        <img class="img-rounded" src="img/inss-logo-4.png" alt="calculos-trabalhistas" id="logo-trabalhista">
+      </div>
+      <h3 class="text-center" id="titulo-trabalhista">CÁLCULOS TRABALHISTAS</h3>
+    </div>
+    
+    <div class="jumbotron">
+      <div class="container" id="jumbotron">
+        <h2>Saiba o seu líquido salárial agora mesmo!</h2>
+        <blockquote class="blockquote-reverse">
+          <p>"Escolha um trabalho de que gostes e não terás que trabalhar nem um dia na tua vida."</p>
+          <footer><cite>Confucio</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="container" id="calculos">
+      <div class="row">
+        <div class="col-md-8">
+          <form>
+            <label for="">Qual o seu salário bruto mensal?</label>
+            <input type="number" class="form-control" id="salario" placeholder="Digite seu salário bruto: R$">
+            <br>
+            <label for="">Possui dependentes para Imposto de Renda?</label>
+            <input type="number" class="form-control" id="nro_dependentes" placeholder="Nº dependentes para IRRF?">
+            <br>
+            <label for="">Qual é o valor da condução diária?</label>
+            <input type="number" class="form-control" id="vlr_conducao" placeholder="Qual o valor da sua condução?">
+            <br>
+            <label for="">Digite a Quantidade de vale-transporte por dia</label>
+            <input type="number" class="form-control" id="qtd_conducao" placeholder="Nº de conduções por dia?">
+            <br>
+            <label for="">Quantos dias trabalha na semana?</label>
+            <input type="number" class="form-control" id="escala" placeholder="Dias trabalhados na semana?">
+            <br>
+            <button class="btn btn-primary btn-lg" onclick="Calcula_Liquido()" type="button" id="btnCalcular">Calcular</button>
+          </form>
+          <br>
+        </div>
+        <div class="col-md-4" id="resultado-trabalhista">
+          <br>
+          <h2 id="titulo-calculo"></h2>
+          <div id="exibir-calc"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <br>
+            <div class="container" id="trata-erro">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+
+</html>

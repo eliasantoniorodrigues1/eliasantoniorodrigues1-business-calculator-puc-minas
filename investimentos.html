@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap 3.3.7-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style-investimentos.css">
+  <title>Investimentos</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div class="container" id="container-logo">
+        <a href="index.html" src="img/calculadora-logo-menor.png"><img class="rounded float-left" src="img/calculadora-logo-menor.png" alt="business-calculator" id="logo"></a>
+        <p id="txt-business-calculator">BUSINESS<br>CALCULATOR</p>
+      </div>
+      <div class="container" id="container-trabalhista">
+        <img class="img-rounded" src="img/investimentos.png" alt="investimentos" id="logo-investimentos">
+      </div>
+      <h3 class="text-center" id="titulo-investimentos">INVESTIMENTOS</h3>
+    </div>
+    
+    <div class="jumbotron">
+      <div class="container" id="jumbotron">
+        <h2>Calcule o montante total de um investimento, postecipado!</h2>
+        <blockquote class="blockquote-reverse">
+          <p>"Investir em conhecimento rende sempre os melhores juros."</p>
+          <footer><cite>Benjamin Franklin</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="container" id="calculo-vf">
+      <div class="row">
+        <div class="col-md-8">
+          <form>
+            <label for="">Qual valor deseja investir inicialmente?</label>
+            <input type="number" class="form-control" id="vp" placeholder="Digite o valor inicial do seu investimento: R$">
+            <br>
+            <label for="">Qual a taxa mensal de juros?</label>
+            <input type="number" class="form-control" id="taxa" placeholder="Qual a taxa de juros mensal?">
+            <br>
+            <label for="">Pretende resgatar esse valor em quantos meses?</label>
+            <input type="number" class="form-control" id="periodo" placeholder="Em quantos meses você pretende resgatar o investimento?">
+            <br>
+            <br>
+            <button class="btn btn-primary btn-lg" onclick="valorFuturo()" type="button" id="btnCalculaVF">Calcular</button>
+          </form>
+          <br>
+        </div>
+
+        <div class="col-md-4" id="resultado-investimentos">
+          <br>
+          <br>
+          <h2 id="titulo-calculo"></h2>
+          <div id="exibir-calc"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <br>
+            <div class="container" id="trata-erro"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+
+</html>
