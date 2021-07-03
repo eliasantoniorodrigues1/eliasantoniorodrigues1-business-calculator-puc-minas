@@ -248,9 +248,9 @@ function valorFuturo() {
   // TESTE DE ENTRADA DE DADOS
   valida = validaEntradas(dict_validacao);
   if (valida !== 'Sucesso'){
-    //alert(valida);
-    document.getElementById("trata-erro").innerHTML = valida;
-    return false;
+    alert(valida);
+    //document.getElementById("trata-erro").innerHTML = valida;
+    return;
   };                  
 
   // ** STRING DE RETORNO DA FUNÇÃO**
