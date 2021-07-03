@@ -1,0 +1,131 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
+
+body {
+    background-color:#074250;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#logo {
+  width: 100px;
+}
+
+#logo-contabilidade {
+  width: 100px;
+}
+
+#container-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-contabilidade {
+  position: relative;
+  left: 960px;
+  top: -100px;
+}
+
+#titulo-contabilidade {
+  font-weight: bolder;
+}
+
+.jumbotron {
+  background-color: #074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+blockquote {
+  height: 40px;
+}
+
+#titulo-contabilidade {
+  position: relative;
+  top: -160px;
+}
+
+.page-header {
+  height: 110px;
+}
+
+.jumbotrom, h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+#titulo_calculo {
+  position: relative;
+  height: -250;
+  font-weight: bolder;
+}
+
+#exibir_calc {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#titulo-calculo {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -20px;
+}
+
+#exibir-calc {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -20px;
+}
+
+form {
+  position: relative;
+  top: -50px
+}
+
+.form-control:disabled {
+  background-color: rgb(228, 224, 224);
+}
+
+@media (max-width: 576px) {
+    .container {
+    /* display: flex;
+    direction: column; */
+    justify-content: space-between;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  #logo-contabilidade, h3 {
+    display: none;
+  }
+
+  #txt-business-calculator {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+  }
+
+}

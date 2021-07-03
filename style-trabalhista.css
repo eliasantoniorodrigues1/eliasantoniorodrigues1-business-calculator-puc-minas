@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
+
+body {
+    background-color:#074250;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#logo {
+  width: 100px;
+}
+
+#logo-trabalhista {
+  width: 130px;
+}
+
+#container-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-trabalhista {
+  position: relative;
+  left: 960px;
+  top: -100px;
+}
+
+#titulo-trabalhista {
+  font-weight: bolder;
+}
+
+.jumbotron, h2 {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+blockquote {
+  height: 40px;
+}
+
+#titulo-trabalhista {
+  position: relative;
+  top: -180px;
+}
+
+.page-header {
+  height: 110px;
+}
+
+.jumbotrom, h2 {
+  text-align: center;
+}
+
+#titulo_calculo {
+  position: relative;
+  height: -250;
+  font-weight: bolder;
+}
+
+#exibir_calc {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#titulo-calculo {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -20px;
+}
+
+#exibir-calc {
+  background-color:#074250;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  left: 0px;
+  top: -20px;
+}
+
+
+#resultado-trabalhista {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .container {
+    justify-content: center;
+  }
+
+  body {
+    width: 100%;
+  }
+  img#logo-trabalhista, h3#titulo-trabalhista  {
+    display: none;
+  }
+  h2 {
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    top: -20px;
+  }
+}
