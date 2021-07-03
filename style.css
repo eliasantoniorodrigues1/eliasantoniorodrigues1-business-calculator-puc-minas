@@ -88,16 +88,18 @@ h3 {
           align-items: center;
 }
 
-#logo-trabalhista {
-  width: 200px;
-  height: 150px;
+#logo-index {
+  width: 220px;
+  height: 180px;
 }
+
+
 /*# sourceMappingURL=style.css.map */
 
-#txt-calc-trabalhista {
+/* #txt-calc-trabalhista {
   position: relative;
-  bottom: -30px;
-}
+  bottom: -5px;
+} */
 
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
