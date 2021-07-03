@@ -290,12 +290,14 @@ function validaEntradas(dicionario_entradas) {
     let v = dicionario_entradas[k];
     var retorno = ``;
     if (isNaN(v)) {
-      validacao = `Valor inválido para o Campo ${k} -> '${v}'`;
+      validacao = `Digite um valor para o campo: ${k}`;
       txtRetornoHTML = `<div class="alert alert-danger alert-dismissible" role="alert" id="box-msg-erro" style="font-family:'Courier New', Courier, monospace">\n
                           <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>\n
                             ${validacao}\n
                         </div>`
-      return txtRetornoHTML;
+      alert(validacao);
+      // return txtRetornoHTML;
+      return;
     }
     else if (v < 0) {
       validacao = `Erro valor inválido para o Campo ${k} -> '${v}'\nDigite um número maior que zero.`;
@@ -303,7 +305,9 @@ function validaEntradas(dicionario_entradas) {
                             <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>\n
                             ${validacao}\n
                         </div>`
-      return txtRetornoHTML;
+      alert(validacao);
+      // return txtRetornoHTML;
+      return;
     }
   }
   validacao = `Sucesso`;
