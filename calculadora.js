@@ -116,9 +116,9 @@ function Calcula_Liquido() {
   let liquido_IRRF = 0;
   let desconto_vt = 0;
 
-  desconto_vt = calculaVT(salario, vlr_conducao, qtd_conducao, escala);
   lista_inss = calculaInss(salario);
   lista_irrf = calculaIrrf(lista_inss[0], nro_dependentes);
+  desconto_vt = calculaVT(salario, vlr_conducao, qtd_conducao, escala);
   salario_liquido = salario - lista_inss[1] - lista_irrf[1] - desconto_vt; 
   // ** STRING DE RETORNO DA FUNÇÃO**
   var retorno = {
@@ -219,6 +219,9 @@ function calculaIrrf(liquido, qtd_dependente) {
     aliquota = descontoIRRF[0];
     deducao = descontoIRRF[1];
     desconto = (liquido * aliquota) - deducao - valorADeduzir;
+    if (desconto < 0) {
+      desconto = 0;
+    }
     novo_liquido = liquido - desconto;
     return [novo_liquido, desconto, aliquota];
   };
