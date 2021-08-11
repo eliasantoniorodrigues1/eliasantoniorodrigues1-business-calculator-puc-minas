@@ -101,6 +101,12 @@ h3 {
   bottom: -5px;
 } */
 
+/* Tira a formatação de cada link do site*/
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1200px) {
   body {
