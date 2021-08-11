@@ -107,6 +107,12 @@ blockquote {
   color: white;
 }
 
+/* Tira a formatação de cada link do site*/
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   .container {
     justify-content: center;
