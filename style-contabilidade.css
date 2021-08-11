@@ -113,6 +113,12 @@ form {
   background-color: rgb(228, 224, 224);
 }
 
+/* Tira a formatação de cada link do site*/
+a, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
     .container {
     /* display: flex;
