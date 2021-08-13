@@ -93,7 +93,9 @@ h3 {
   height: 180px;
 }
 
-
+img#logo-trabalhista {
+  width: 280px;
+}
 /*# sourceMappingURL=style.css.map */
 
 /* #txt-calc-trabalhista {
@@ -146,5 +148,4 @@ a, a:hover {
     position: relative;
     top: -20px;
   }
-
 }
